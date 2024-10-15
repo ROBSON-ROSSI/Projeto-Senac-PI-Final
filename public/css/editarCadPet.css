@@ -1,0 +1,183 @@
+body, html {
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+    background-color: transparent;
+    font-family: var(--fontInter);
+}
+
+.editCadPet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto !important;
+    padding: 70px 0;
+}
+
+#mensagem-pet {
+    height: 100px;
+}
+
+/* MOBILE */
+
+/* logo */
+.editCadPet img{
+    width: 40%;
+}
+
+/* container geral do formulário */
+.container-editcad-pet {    
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-editcad-pet label {
+    margin-top: 5px;
+    font-family: var(--fontInter);
+}
+
+/*  */
+.container-editcad-pet h1 {
+    font-family: var(--fontBaloo);
+    text-align: center;
+    color: #01A58D;
+    margin: 15px;
+    font-size: 2em;
+}   
+
+.form-editcad-pet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* font-family: var(--fontInter); */
+    width: 100%;
+}
+
+.ajustes-form-editar label, .ajustes-form-editar2 label, .caixa-msg label {
+    font-family: var(--fontInter);
+    font-size: 1.5em;
+}
+
+.form-editcad-pet input, .form-editcad-pet select, .caixa-msg textarea  {
+    width: 100%;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    outline: none;
+    font-family: var(--fontInter);
+    margin: 5px 0;
+    padding: 7px 2px;
+    border: 1px solid #01A58D;
+    border-radius: 20px;
+    color: #8D8D8D;  
+}
+
+.ajustes-form-editar, .ajustes-form-editar2, .caixa-msg, .form-editar-pet  {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: var(--fontInter);
+    color: #7F7F7F;
+    width: 100%;
+}
+
+.form-editar-pet div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-editar-pet select {
+    width: 80%;
+    margin: 10px;
+    padding: 3px;
+}
+
+#btn-editar-pet {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #01A58D;
+    cursor: pointer;
+    color: white;
+    font-family: var(--fontInter);
+    border: none;
+}
+
+#btn-editar-pet:hover {
+    background-color: white;
+    color: #01A58D;
+    border: 1px solid #01A58D;
+}
+
+#btn-edit-voltar {    
+    font-family: var(--fontInter);
+    color: #01A58D;
+    margin: 10px;
+}
+
+#btn-deletar-pet {
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    color: #01A58D;
+    border: 1px solid #01A58D;
+    font-family: var(--fontInter);
+}
+
+#btn-deletar-pet:hover {
+    background-color: #01A58D;
+    color: white;
+    border: 1px solid #01A58D;
+}
+
+.botoes-editar-pet {
+    display: flex;
+}
+
+@media screen and (min-width: 800px) {
+    .editCadPet {
+        padding: 0;
+    }
+
+    .container-editcad-pet {
+        border: 1px solid #8D8D8D;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .editCadPet img{
+        width: 40%;
+    }
+
+    .form-editcad-pet {
+        flex-direction: row;
+    }
+
+    .ajustes-form-editar, .ajustes-form-editar2, .form-editar-pet {
+        width: 50%;
+    }
+
+    .editcadastro-pet {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}

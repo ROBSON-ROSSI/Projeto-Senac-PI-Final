@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/estilo.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/carrossel.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/testemunhos.css">
+    <link rel="stylesheet" href="css/area_adocao.css">
+    <link rel="stylesheet" href="css/cookies.css">
+    <link rel="stylesheet" href="css/sobre_nos.css">
+    <!-- <link rel="stylesheet" href="css/login.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="js/carrossel.js" defer></script>
+    <script src="js/area_adocao.js" defer></script>
+    <script src="js/index_cookie.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_upward" />
+
+    <!-- <script src="js/sobre_nos.js" defer></script> -->
+    <script src="js/header.js" defer></script>
+    <style>
+        /* main{
+            width: 100%;
+            max-width: 1920px;
+            height: 100%;
+            margin: auto;
+        } */
+
+        body-contaner{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+
+        html{
+            scroll-behavior: smooth; 
+        }
+
+        
+
+        .index-main{
+            flex: 1 1 0;
+        }      
+
+
+                
+    </style>
+
+</head>
+
+<body class="body-contaner">
+   <main class="index-main">
+    <%- include('parters/header') %>
+    <%- include('parters/carrossel') %>
+    <%- include('parters/area_adocao') %>
+    <%- include('parters/testemunhos') %>
+    <%- include('parters/sobre_nos') %>
+    <%- include('parters/cookies') %>
+
+
+
+
+       
+
+    </main>
+    <%- include('parters/footer') %>
+
+
+ 
+</body>
+
+</html>

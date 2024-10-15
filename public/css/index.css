@@ -1,0 +1,5 @@
+/* EXEMPLO DE UTILIZAÇÃO DE VARIÁVEL */
+h1{
+  color: var(--cor);
+  font-family: var(--font);
+} 

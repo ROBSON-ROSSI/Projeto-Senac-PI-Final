@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/adocao.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- JS -->
+    <script src="js/cards_adocao.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_upward" />
+    
+</head>
+<body>
+    <header>
+        <%- include('parters/header') %>
+    </header>
+    <main>       
+
+         <!-- ----- -->
+        <!-- LISTA PETS -->
+        <div class="container-conheca">
+            <div class="div-conheca-animais">
+                <h1>Lista de Pets</h1>
+                <div>
+                    <h3>Conheça os animais</h3>
+                    <p>Encontre seu companheiro animal perfeito! 
+                        Conheça nossos pets adoráveis esperando por um lar amoroso. 
+                        Seja a razão do ronronar, do abanar de caudas ou do bater de asas. de felicidade. 
+                        Adote hoje e faça a diferença na vida de um animalzinho necessitado!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------ -->
+        <!-- FILTROS POR ESPÉCIES -->
+        <nav class="container-filtros">
+                <img src="imagens/filtros/image 14.png" alt="">
+                <img src="imagens/filtros/image 15.png" alt="">
+                <img src="imagens/filtros/Rectangle 162.png" alt="">
+                <img src="imagens/filtros/Rectangle 163.png" alt="">
+                <img src="imagens/filtros/Rectangle 164.png" alt="">
+        </nav>
+
+        <!-- ----- -->
+        <!-- CARDS -->
+        <%- include('parters/card-adocao.ejs') %>
+
+
+        
+    </main>
+        <!-- ---- -->
+        <!-- FOOTER -->
+        <%- include('parters/footer') %>
+
+    
+</body>
+</html>

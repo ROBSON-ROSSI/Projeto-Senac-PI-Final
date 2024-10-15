@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="js/popup.js" defer></script>
+    <!-- <link rel="stylesheet" href="css/header.css"> -->
+    <!-- <script src="js/header.js" defer></script> -->
+    <title>PetSpot Cadastro</title>
+
+</head>
+
+<body>
+ 
+   
+    <form class="form-cadastro" action="/registrar" method="post">
+        <h1><img src="imagens/logo.svg" alt=""></h1>
+        <fieldset>
+            <!-- <label for="">Nome</label> -->
+            <input type="name" name="name" id="name-cadastro" placeholder="Digite seu nome" required>
+        </fieldset>
+        <fieldset>
+            <!-- <label for="">Usuario</label> -->
+            <input type="email" name="user" id="user" placeholder="Digite seu Email" required>
+        </fieldset>
+        <fieldset>
+            <!-- <label for="">Senha</label> -->
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+        </fieldset>
+
+        <fieldset class="fieldset-btn">
+            <button id="btn-enviar-cadastro" type="submit">Cadastrar</button>
+        </fieldset>
+        <!-- <div class="link-pagina">
+            <a href="/recuperar">Esqueceu a senha?</a>
+            <a href="/cadastrar">Criar uma conta</a>
+        </div> -->
+        <div class="btn-cad-voltar">
+            <a href="/login" id="btn-voltar
+            ">VOLTAR</a>
+        </div>
+
+</form>
+<%- include('parters/popup.ejs') %>
+<script>
+       var btn_cadastro = document.querySelector('#btn-enviar-cadastro');
+       
+       var token = Cookies.get('token');
+       var msg = Cookies.get('msg');
+       console.log(document.cookie.split("="))
+
+     
+       
+       
+       btn_cadastro.addEventListener('submit',(e) => {
+          e.preventDefault();       
+       });
+
+       
+      
+
+</script>
+</body>
+
+</html>

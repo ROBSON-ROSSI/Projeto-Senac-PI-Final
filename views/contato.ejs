@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+    <section class="contato">
+        <img src="imagens/logo.svg" alt="">    
+        <div class="container-contato">
+            <div class="titulo">
+                <h1>CONTATO</h1>
+                <p>Entre em contato conosco a qualquer hora. Nós iremos responder assim que possível.</p>
+            </div>
+            <form class="contato-pet" action="/registrar" method="post">
+                <div class="form-contato">
+                    <div class="ajustes-form-contato">
+                        <label for="">Nome</label>
+                        <input type="name" name="name" id="nome-contato" placeholder="Digite seu nome" required>
+                        
+                        <label for="">Email</label>
+                        <input type="email" name="email" id="email-contato" placeholder="Digite seu email" required>                    
+
+                    </div>
+
+                    <div class="ajustes-form-contato2">
+                        <label for="">Mensagem</label>
+                        <textarea name="message" type="message" placeholder="Escreva sua mensagem">
+                        </textarea>
+                        
+                    </div>  
+                </div>
+                <div action="" class="formcontato">
+                    <div class="botoes-contato">
+                        <button id="btn-contato" type="submit">CONTINUAR</button>
+                    </div>
+                    <div>
+                        <a href="/meus_pets" id="btn-edit-voltar">VOLTAR</a>
+                    </div>
+                </div>
+
+            </form>
+            
+            
+            <!-- <div class="info">
+                <p class="informacoes-contato">
+                     Telefone: (11) 1234-5678
+                    <br>
+                     E-mail: contato@petspotadote.com.br
+                    <br>
+                     Horário de Atendimento: 08:00h às 21:00h - Segunda a Sexta
+                    <br>
+                     Endereço: R. Tito, 54 - Vila Romana, São Paulo - SP, 05051-000
+                    <br>
+                     Veja no Google Maps: <a href="https://maps.app.goo.gl/UZMSCgE5ReNoBtmR9">PetSpot Localização</a>
+                </p>
+            </div> -->
+        </div>
+</section>
+</body>
+</html>

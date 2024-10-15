@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+:root{
+    --CorHeader: #01a58d;
+    --fontBaloo: 'Baloo', sans-serif;
+    --fontInter: 'Montserrat', sans-serif;
+    --CorFooter:#01a58d; 
+    --CorBotoes: #01a58d;
+    --CorCards: #f3f2f0;
+    --FonteCard: #01a58d;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    font-family: var(--fontInter);
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior:smooth
+}
+
+body::-webkit-scrollbar{
+   
+
+}
+
+  
+
+

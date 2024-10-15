@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/recuperar.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="js/popup.js" defer></script>
+    <!-- <link rel="stylesheet" href="css/header.css"> -->
+    <!-- <script src="js/header.js" defer></script> -->
+    <title>PetSpot Login</title>
+
+</head>
+
+<body>
+   
+
+     
+    <form class="form-login" action="/recuperar" method="post">
+        <h1><img src="imagens/logo.svg" alt=""></h1>
+        <fieldset>
+            <!-- <label for="">Usuario</label> -->
+            <input type="email" name="user" id="user" placeholder="Digite seu Email" required>
+        </fieldset>
+       
+
+        <fieldset class="fieldset-btn">
+            <button id="btn-enviar-login" type="submit">Enviar</button>
+        </fieldset>
+       
+
+        <div class="btn-recupera-voltar">
+            <a href="/login" id="btn-voltar
+            ">VOLTAR</a>
+        </div>
+
+</form>
+<%- include('parters/popup.ejs') %>
+<script>
+       var btn_login = document.querySelector('#btn-enviar-login');
+       
+       var token = Cookies.get('token');
+       var msg = Cookies.get('msg');
+       console.log(document.cookie.split("="))
+
+     
+       
+       
+       btn_login.addEventListener('click',(e) => {
+          e.defaultPrevented;
+        
+       });
+
+       
+      
+
+</script>
+</body>
+
+</html>

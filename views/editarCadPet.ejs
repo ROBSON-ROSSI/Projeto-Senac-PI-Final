@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Cadastro Pet</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/editarCadPet.css">
+</head>
+<body>
+    <section class="editCadPet">
+        <img src="imagens/logo.svg" alt="">    
+        <div class="container-editcad-pet">
+            <div>
+                <h1>Atualize os dados do seu pet.</h1>
+            </div>
+            <form class="editcadastro-pet" action="/registrar" method="post" enctype="multipart/form-data">
+                <div class="form-editcad-pet">
+                    <div class="ajustes-form-editar">
+                        <label for="">Nome Pet</label>
+                        <input type="name" name="name" id="nome-pet" placeholder="Digite o nome do Pet" value="<%= nome %>" required>
+                    
+                        <label for="">Pet</label>
+                        <select id="tipos-pets" placeholder="Tipo do Pet" name="especies">
+                            <option value=""></option>
+                           
+                        </select>
+
+
+                        <label for="">Gênero</label>
+                        <select id="genero-pet" name="genero">
+                            <option value="">Fêmea</option>
+                            <option value="">Macho</option>
+                        </select>
+
+                        <label for="">Peso</label>
+                        <select type="text" name="peso" id="peso-pets">
+                            <option value="">0-11kg</option>
+                            <option value="">11-22kg</option>
+                            <option value="">22-45kg</option>
+                            <option value="">45+kg</option>
+                        </select>
+
+                    </div>
+
+                    <div class="ajustes-form-editar2">
+                        <label for="">Carregue uma foto</label>
+                        <input type="file" name="file" class="btn-carregar-foto">
+
+                        <label for="">Data de Nascimento</label>
+                        <input type="date" name="data_nascimento" id="nasc-pet" placeholder="Digite o nome do Pet" value="<%= data_nascimento %>" required>
+                        
+                        <label for="">Esterilizado ou Castrado</label>
+                        <select id="reproducao-pet" name="castrado">
+                            <option value="">Sim</option>
+                            <option value="">Não</option>
+                        </select>
+                        
+                    </div> 
+                    
+                </div>
+                <div class="caixa-msg">                       
+
+                    <label for="">Mensagem</label>
+                    <textarea name="mensagem" type="message" id="mensagem-pet" value="<%= mensagem %>" placeholder="Escreva sua mensagem">
+                    </textarea>
+                </div>
+                <div action="" class="form-editar-pet">
+                    <div class="botoes-editar-pet">
+                        <button id="btn-editar-pet" type="submit">Salvar</button>
+    
+                        <button id="btn-deletar-pet" type="submit">Deletar</button>
+                    </div>
+                    <div>
+                        <a href="/meus_pets" id="btn-edit-voltar">VOLTAR</a>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+</section>
+</body>
+</html>

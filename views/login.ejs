@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/popup.css">
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="js/popup.js" defer></script>
+    <!-- <link rel="stylesheet" href="css/header.css"> -->
+    <!-- <script src="js/header.js" defer></script> -->
+    <title>PetSpot Login</title>
+
+</head>
+
+<body>
+
+
+<form class="form-login" action="/logar" method="post">
+        <h1><img src="imagens/logo.svg" alt=""></h1>
+        <fieldset>
+            <!-- <label for="">Usuario</label> -->
+            <input type="email" name="user" id="user" placeholder="Digite seu Email" required>
+        </fieldset>
+        <fieldset>
+            <!-- <label for="">Senha</label> -->
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+        </fieldset>
+
+        <fieldset class="fieldset-btn">
+            <button href="meus_pets.ejs" id="btn-enviar-login" type="submit">Entrar</button>
+        </fieldset>
+        <div class="link-pagina">
+            <a href="/recuperar">Esqueceu a senha?</a>
+            <a href="/cadastro">Criar uma conta</a>
+        </div>
+
+        <div class="btn-login-voltar">
+            <a href="/" id="btn-voltar
+            ">VOLTAR</a>
+        </div>
+
+    </form>
+
+    <%- include('parters/popup.ejs') %>
+   
+
+
+
+            <script>
+                var btn_login = document.querySelector('#btn-enviar-login');
+              
+               
+
+        //    if(Cookies.get('status') == 'Usuario e senha invalida'){
+        //      alert(Cookies.get('status'));
+        //      Cookies.set('status','');
+            
+
+        //    }
+              
+            
+               
+          
+                btn_login.addEventListener('click', (e) => {
+                   // e.preventDefault();
+                   var token = Cookies.get('token');
+                   console.log(token)
+
+                });
+
+
+             
+
+            </script>
+</body>
+
+</html>

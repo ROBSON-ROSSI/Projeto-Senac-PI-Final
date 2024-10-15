@@ -1,0 +1,227 @@
+/* main {
+    height: 100%;
+} */
+
+.container-conheca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+.div-conheca-animais {
+    background-color: var(--CorHeader);
+    border-radius: 10px;
+    width: 80%;
+    margin: 8%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-conheca-animais{
+    width: 100%;
+}
+
+.div-conheca-animais h1 {
+    font-family: var(--fontBaloo);
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
+.div-conheca-animais div {
+    font-family: var(--fontInter);
+    color: white;
+    text-align: center;
+}
+
+
+/* ================================== */
+/* FILTROS */
+.container-filtros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container-filtros img {
+    display: flex;
+    width: 15%;
+    border: 1px solid #8D8D8D;
+    border-radius: 4px;
+    padding: 2px;
+    margin: 3px;
+}
+
+
+/* ================================== */
+/* CARDS */
+.cards-adocao {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 30px;
+    grid-gap: 30px;
+}
+
+.cards-adocao .div-card-doacao{
+    width: 100%;
+    max-width: 450px;
+    /* min-width: 450px; */
+    /* height: 350.63px; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--CorCards);
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+    /* margin-left: 190px;
+    margin-top: 20px; */
+    box-shadow: 0 0 10px rgba(92, 92, 92, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(92, 92, 92, 0.6);
+}
+
+.cards-adocao .div-img-card{
+    width: 100%;
+    max-width: 350px;
+    /* height: 267px; */
+    height: 212.9px;
+    background-color: var(--CorHeader);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+   
+}
+
+.cards-adocao .div-img-card img{
+   width: 100%;
+   /* height: 100%; */
+   object-fit: cover;
+   object-position: center; 
+   max-width: 405px;
+   height: auto;
+ /* height: 212.9px; */
+   border-radius: 10px;
+
+    
+}
+
+.cards-adocao .div-dados-animal{
+    display: flex;
+    width: 100%;
+    max-width: 405px;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-left: 20px;
+  
+    
+}
+
+.cards-adocao .div-dados-animal p{
+  text-align: left;
+  font-size: 1.375em; 
+  color: var( --FonteCard);
+  display: block;
+  font-family: var(--fontInter);
+  
+}
+
+.cards-adocao .div-botao{
+    width: 100%;
+    max-width: 405px;
+    height: 50px;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 20px; */
+    padding: 5px;
+}
+
+.cards-adocao .div-botao a{
+    font-size: 1.625em;
+    font-family:  var(--fontInter);
+    background-color: var(--CorBotoes);
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-family: var(--fontInter);
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.cards-adocao .div-botao a:hover{
+   transform: scale(1.1);
+}
+
+
+
+.cards-adocao .div-botao span{
+    font-size: 1.125em;
+    font-family:  var(--fontInter);
+    color: var(--FonteCard);
+    display: block;
+    width: 100%;
+    
+    padding-left: 15px;
+}
+
+/* ======== */
+/* FOOTER */
+
+
+
+@media screen and (min-width: 600px) {
+    .div-conheca-animais {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .div-conheca-animais div {
+        width: 60%;
+        text-align: left;
+        margin: 10px;
+    }
+
+    .div-conheca-animais h1 {
+        margin-left: 20px;
+    }
+
+    /* FILTROS */
+    .container-filtros img {
+        width: 10%;
+        margin: 3%;
+    }
+
+    /* CARDS */
+    .cards-adoçao{
+        padding: 5%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .div-conheca-animais {
+        width: 60%;
+    }
+
+    .div-conheca-animais h1 {
+        font-size: 2.5em;
+    }
+
+    /* FILTROS */
+    .container-filtros img {
+        width: 5%;
+        margin: 0 3%;
+    }
+}

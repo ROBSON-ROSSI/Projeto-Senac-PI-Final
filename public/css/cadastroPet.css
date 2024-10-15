@@ -1,0 +1,162 @@
+body, html {
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+    background-color: transparent;
+    font-family: var(--fontInter);
+    scroll-behavior: auto;
+}
+
+.cadPet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto !important;
+    padding: 70px 0;
+}
+
+/* MOBILE */
+
+/* logo */
+.cadPet img{
+    width: 40%;
+}
+
+/* container geral do formulário */
+.container-cadastro-pet {    
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+/*  */
+.container-cadastro-pet h1 {
+    font-family: var(--fontBaloo);
+    text-align: center;
+    color: #01A58D;
+    margin: 15px;
+    font-size: 2em;
+}   
+
+.form-cadastro-pet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* font-family: var(--fontInter); */
+}
+
+
+.ajustes-form label, .ajustes-form2 label, .caixa-msg-cad label {
+    font-family: var(--fontInter);
+    font-size: 1.5em;
+}
+
+.form-cadastro-pet input, .form-cadastro-pet select, .caixa-msg-cad textarea {
+    width: 100%;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    outline: none;
+    font-family: var(--fontInter);
+    margin: 5px 0;
+    padding: 7px 2px;
+    border: 1px solid #01A58D; 
+    border-radius: 20px;  
+    color: #8D8D8D; 
+}
+
+.ajustes-form, .ajustes-form2, .caixa-msg-cad {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: var(--fontInter);
+    color: #7F7F7F;
+    width: 100%;
+}
+
+.form-pet div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-pet select {
+    width: 80%;
+    margin: 10px;
+    padding: 3px;
+}
+
+.div-btn {
+    width: 100%;
+}
+
+
+#btn-cadastro-pet {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #01A58D;
+    cursor: pointer;
+    color: white;
+    font-family: var(--fontInter);
+    border: none;
+}
+
+#btn-cadastro-pet:hover {
+    background-color: white;
+    color: #01A58D;
+    border: 1px solid #01A58D;
+}
+
+#btn-cad-voltar {    
+    font-family: var(--fontInter);
+    color: #01A58D;
+    font-size: 1.3rem;
+}
+
+#mensagem-pet-cad {
+    height: 100px;
+}
+
+
+@media screen and (min-width: 800px) {
+    .cadPet {
+        padding: 0;
+    }
+
+    .cadPet img{
+        width: 40%;
+    }
+
+    .form-cadastro-pet {
+        flex-direction: row;
+    }
+
+    .ajustes-form, .ajustes-form2, .form-pet {
+        width: 50%;
+    }
+
+    .cadastro-pet {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-cadastro-pet {
+        border: 1px solid #8D8D8D;
+        border-radius: 10px;
+        padding: 20px;
+    }
+}

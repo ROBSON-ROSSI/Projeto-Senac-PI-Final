@@ -1,0 +1,185 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/* Desktop */
+/* ============================================================= */
+
+
+.rotulo {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.rotulo h2{
+   font-size: 2.5em;
+   font-weight: 400;
+   text-align: center;
+   font-family: var(--fontInter);
+   padding: 40px 0;
+
+   /* padding-left: 10%;
+   padding-top: 40px; */
+  
+   
+}
+
+#adocao{
+    color: var(--CorHeader);
+}
+
+.rotulo a{
+  font-size: 1.875em;  
+  font-weight: bold;
+  padding-left: 20px;
+  line-height: 36.31px;
+  padding-top: 45px;
+  font-family: var(--fontInter);
+}
+
+.galeria-adoçao{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 30px;
+    grid-gap: 30px;
+   
+    
+
+
+    /* height: auto;
+    width: 100%;
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;    */
+}
+
+.galeria-adoçao .div-card-doacao{
+    width: 100%;
+    max-width: 450px;
+    /* min-width: 450px; */
+    /* height: 350.63px; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--CorCards);
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+    /* margin-left: 190px;
+    margin-top: 20px; */
+    box-shadow: 0 0 10px rgba(92, 92, 92, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(92, 92, 92, 0.6);
+}
+
+.galeria-adoçao .div-img-card{
+    width: 100%;
+    max-width: 350px;
+    /* height: 267px; */
+    height: 212.9px;
+    background-color: var(--CorHeader);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+   
+}
+
+.galeria-adoçao .div-img-card img{
+   width: 100%;
+   /* height: 100%; */
+   object-fit: cover;
+   object-position: center; 
+   max-width: 405px;
+   height: auto;
+ /* height: 212.9px; */
+   border-radius: 10px;
+
+    
+}
+
+.galeria-adoçao .div-dados-animal{
+    display: flex;
+    width: 100%;
+    max-width: 405px;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-left: 20px;
+  
+    
+}
+
+.galeria-adoçao .div-dados-animal p{
+  text-align: left;
+  font-size: 1.375em; 
+  color: var( --FonteCard);
+  display: block;
+  font-family: var(--fontInter);
+  
+}
+
+.galeria-adoçao .div-botao{
+    width: 100%;
+    max-width: 405px;
+    height: 50px;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 20px; */
+    padding: 5px;
+}
+
+.galeria-adoçao .div-botao a{
+    font-size: 1.625em;
+    font-family:  var(--fontInter);
+    background-color: var(--CorBotoes);
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-family: var(--fontInter);
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.galeria-adoçao .div-botao a:hover{
+   transform: scale(1.1);
+}
+
+
+
+.galeria-adoçao .div-botao span{
+    font-size: 1.125em;
+    font-family:  var(--fontInter);
+    color: var(--FonteCard);
+    display: block;
+    width: 100%;
+    
+    padding-left: 15px;
+}
+
+/* Mobile  medias query*/
+/* =============================================== */
+@media screen and (max-width: 800px) {
+    .rotulo h2{
+        font-size: 1.6em;
+        font-weight: bold;
+    
+    }
+
+    .galeria-adoçao{
+       padding: 5%;
+    }
+    
+}
+
+

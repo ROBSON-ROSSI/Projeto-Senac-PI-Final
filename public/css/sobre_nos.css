@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* CSS DESKTOP */
+
+.contaner-sonbrenos {
+    height: auto;
+    display: flex;
+    width: 100%;
+    padding: 2%;
+   
+  
+
+}
+
+.txt_sobre_nos{
+    text-align: center;
+    padding: 20px;
+    background-color: var(--CorHeader);
+    color: white;
+    font-family: var(--fontInter);
+}
+
+.sobrenos-logo img {
+    /* width: 50%; */
+    object-fit: cover;
+  
+}
+
+.sobrenos-logo {
+   
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.sobrenos-texto {
+    /* padding-top: 5%; */
+    width: 50%;
+    padding: 7%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+}
+
+.sobrenos-texto h1 {
+    text-align: center;
+    font-size: 3rem;
+    color:  #01a58d;
+    font-family: 'Baloo', sans-serif;
+}
+
+.sobrenos-texto p {
+    font-size: 2rem;
+    margin-top: 10px;
+    text-align: center;
+    font-family: var(--fontInter);
+    text-align: justify;
+}
+
+.contaner-texto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    /* padding-top: 30%; */
+    
+}
+
+/* CSS MOBILE */
+/* ================================================== */
+
+@media screen and (max-width: 1280px) {
+.contaner-sonbrenos {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}  
+
+.sobrenos-logo{
+    width: 100%;
+    min-height: 320px;
+    border-bottom: 1px solid #01a58d;
+}
+
+.sobrenos-texto{
+    width: 100%;
+    padding-top: 0;
+    
+}
+
+.sobrenos-texto p {
+
+   text-align: justify;
+ }
+}
+
+@media screen and (max-width: 600px){
+
+.sobrenos-texto h1 {
+ 
+    font-size: 2.3rem;
+}
+
+.sobrenos-texto p {
+   font-size: 1.5rem;
+   margin-top: 10px;
+   text-align: justify;
+ }
+
+ .sobrenos-logo img {
+    width: none;
+ }
+
+}

@@ -1,0 +1,43 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ html,body{
+    width: 100%;
+    height: 100vh;
+ } */
+
+ .car_contaner{
+   display: flex;
+   overflow: hidden;
+    
+ }
+
+ .car_contaner img{
+   width: 100%;
+   
+    
+ }
+
+ .car_contaner img:nth-child(1){
+    margin-left: 0;
+    transition: 1s linear;
+ }
+
+ @media screen and (max-width:800px) {
+
+   .car_contaner{
+      height: 300px;
+      
+   }
+   
+ }
+
+ @media screen and (max-width: 500px) {
+   .car_contaner{
+      height: 230px;
+      
+   }
+}

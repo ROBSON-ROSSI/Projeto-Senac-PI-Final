@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pet</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cadastroPet.css">
+    <script src="js/cadastropet.js" defer></script>
+</head>
+<body>
+    <section class="cadPet">
+        <img src="imagens/logo.svg" alt="">    
+        <div class="container-cadastro-pet">
+            <div>
+                <h1>Nos informe o básico sobre o seu animalzinho.</h1>
+            </div>
+            <form class="form-cadastro-pet" action="/cadastrar" method="post" enctype="application/x-www-form-urlencoded">
+                
+                <div class="ajustes-form">
+                    <label for="">Nome Pet</label>
+                    <input type="name" name="name" id="nome-pet" placeholder="Digite o nome do Pet" required>
+                
+                    <label for="">Espécie</label>
+                    <select id="tipos-pets" placeholder="Tipo do Pet" name="pets">
+                        <option value=""></option>
+                    </select>
+
+
+                    <label for="">Gênero</label>
+                    <select id="genero-pet" name="pets">
+                        <option value="">Fêmea</option>
+                        <option value="">Macho</option>
+                    </select>
+
+                    <label for="">Peso</label>
+                    <select type="text" name="pets" id="peso-pets" required>
+                        <option value="">0-11kg</option>
+                        <option value="">11-22kg</option>
+                        <option value="">22-45kg</option>
+                        <option value="">45+kg</option>
+                    </select>
+
+                </div>
+
+                <div class="ajustes-form2">
+                    <label for="">Carregue uma foto</label>
+                    <input type="file" name="arquivos" class="btn-carregar-foto" multiple/>
+
+                    <label for="">Data de Nascimento</label>
+                    <input type="date" name="name" id="nasc-pet" placeholder="Digite o nome do Pet" required>
+                    
+                    <label for="">Esterilizado ou Castrado</label>
+                    <select id="reproducao-pet" name="pets">
+                        <option value="">Sim</option>
+                        <option value="">Não</option>
+                    </select>
+                    
+                </div>  
+                                  
+            </form>
+            <div action="" class="form-pet">
+                <div>
+                    <button type="submit" id="btn-cadastro-pet" type="submit">CADASTRAR</button>
+                </div>
+                <div>
+                    <a href="/login" id="btn-cad-voltar">VOLTAR</a>
+                </div>
+            </div>
+        </div>
+</section>
+</body>
+</html>

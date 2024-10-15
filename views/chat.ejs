@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" defer></script>
+    <script src="js/chat.js" defer></script>
+    <title>CHAT PETSPOT</title>
+</head>
+
+<body class="body-chat">
+    <header>
+        <h1>PETSPOT</h1>
+        <img class="ico-menu" src="imagens/icones/menu.svg" alt="">
+        <a  id="btn_sair" href="/meus_pets">Sair</a>
+    </header>
+    <!-- <div class="status-usuario">
+        <img src="imagens/logo01_SVG.svg" alt="">
+        <div class="div-descricao-status">
+            <p>Robson</p>
+            <p>Online</p>
+        </div>
+    </div> -->
+
+    <main class="main-contaner">
+
+
+        <div class="div-contaner-online close-lista">
+            <div class="div-topo-online">
+                     <h2>
+                        <img src="imagens/icones/user_groups.svg" alt="">
+                        Usuarios Online
+                    </h2>
+                     <span class="fecha-lista-online">X</span>
+            </div>
+
+            <div class="lista-online-usuarios">
+
+             
+                <!-- ====== -->
+                <!-- <div class="card-usuario-online">
+                    <img src="imagens/1728341950748.png" alt="">
+                    <p>Stephanie</p>
+                    <div class="div-button-card">
+                        <img src="imagens/icones/icones_camera.png" alt="">
+                        <img src="imagens/icones/message_preview.svg" alt="">
+                        <img src="imagens/icones/whatsapp.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="card-usuario-online">
+                    <img src="imagens/1728342115734.png" alt="">
+                    <p>Lucas</p>
+                    <div class="div-button-card">
+                        <img src="imagens/icones/icones_camera.png" alt="">
+                        <img src="imagens/icones/message_preview.svg" alt="">
+                        <img src="imagens/icones/whatsapp.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="card-usuario-online">
+                    <img src="imagens/1728344699405.png" alt="">
+                    <p>Arthur</p>
+                    <div class="div-button-card">
+                        <img src="imagens/icones/icones_camera.png" alt="">
+                        <img src="imagens/icones/message_preview.svg" alt="">
+                        <img src="imagens/icones/whatsapp.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="card-usuario-online">
+                    <img src="imagens/logo01_SVG.svg" alt="">
+                    <p>Robson</p>
+                    <div class="div-button-card">
+                        <img src="imagens/icones/icones_camera.png" alt="">
+                        <img src="imagens/icones/message_preview.svg" alt="">
+                        <img src="imagens/icones/whatsapp.svg" alt="">
+                    </div>
+                </div> -->
+
+                <!-- ===== -->
+               
+            </div>
+
+        </div>
+
+        <div class="div-chat-msg">
+            <!-- <div class="msgchat">
+                <p>
+                    <img src="imagens/1728341950748.png" alt="">
+                    Robson:
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odit enim tenetur atque neque ratione omnis aperiam itaque pariatur libero minus iusto eaque quisquam, nisi nesciunt possimus illum iste ex!</p>
+                <p><img src="https://i.gifer.com/5xPb.gif" alt=""></p>
+            </div> -->
+            <div class="div-lista-emoji close-emoji">
+                <img src="https://i.gifer.com/5xPb.gif" alt="">
+                <img src="https://i.gifer.com/WG8M.gif" alt="">
+                <img src="https://i.gifer.com/YX4f.gif" alt="">
+                <img src="https://i.gifer.com/2iFd.gif" alt="">
+                <img src="https://i.gifer.com/4L4A.gif" alt="">
+                <img src="https://i.gifer.com/yu9.gif" alt="">
+                <img src="https://i.gifer.com/2QwN.gif" alt="">
+                <img src="https://i.gifer.com/Z6W2.gif" alt="">
+                <img src="https://i.gifer.com/5UKF.gif" alt="">
+                <img src="https://i.gifer.com/4Mj.gif" alt="">
+                <img src="https://i.gifer.com/2K8.gif" alt="">
+                <img src="https://i.pinimg.com/originals/31/2c/5d/312c5ddaf6c06c509af9d01e6ffbd343.gif" alt="">
+                <img src="https://i.pinimg.com/originals/66/8c/3b/668c3bd964c155eeec4a911e50fb59f7.gif" alt="">
+                <img src="https://i.pinimg.com/originals/4d/3c/7e/4d3c7e7136cd579f3c438be6d42c1f2d.gif" alt="">
+                <img src="https://i.pinimg.com/originals/59/f7/a2/59f7a2cdb89f248954c7ffc8ca91e649.gif" alt="">
+                <img src="https://i.pinimg.com/originals/c8/94/0c/c8940c86d437b4bcd2fa1f0b67294eb7.gif" alt="">
+                <img src="https://i.pinimg.com/originals/c6/55/a9/c655a97df959b70a1682b48cf74cced3.gif" alt="">
+                <img src="https://i.pinimg.com/originals/a3/5d/0c/a35d0ced7e617a4a2f9c8263952eab5f.gif" alt="">
+                <img src="https://i.pinimg.com/originals/a9/66/f4/a966f44a17c7a3673ab6b7d7bcb4baf9.gif" alt="">
+                <img src="https://i.pinimg.com/originals/b1/03/3b/b1033bc996c69d3a6003c2fa07281aaf.gif" alt="">
+                <img src="https://i.pinimg.com/originals/d0/ec/e7/d0ece76d33a48f04862e8e3ea1ba3696.gif" alt="">
+                <img src="https://i.pinimg.com/originals/3a/c5/35/3ac535e96eca0c9b9cd318a75ffd133e.gif" alt="">
+                <img src="https://i.pinimg.com/originals/76/fc/f8/76fcf8dbdde57ffb29c70d6be35c1ca7.gif" alt="">
+                <img src="https://i.pinimg.com/originals/6b/86/75/6b8675728e37d819d4a861962651d335.gif" alt="">
+                <img src="https://i.pinimg.com/originals/eb/1e/c9/eb1ec9aaaa20df782246f88ad253433f.gif" alt="">
+                <img src="https://i.pinimg.com/originals/bb/97/1f/bb971ff4ccd1a090a790551262fed230.gif" alt="">
+                <img src="https://i.pinimg.com/originals/fe/3b/41/fe3b41ff75f4e1e73d48ae338fbc80b2.gif" alt="">
+                <img src="https://i.pinimg.com/originals/a7/00/45/a7004578415b31aa43f1f2b59b91571b.gif" alt="">
+                <img src="https://i.pinimg.com/originals/63/67/f4/6367f46fa96336b9e636ca3252b3dde6.gif" alt="">
+                <img src="https://i.pinimg.com/originals/6b/be/f2/6bbef2a97d696f59e877431d0d6f064b.gif" alt="">
+                <img src="https://i.pinimg.com/originals/83/f3/36/83f3367e1d7203ba7bed8bf4fc52c332.gif" alt="">
+                <img src="https://i.pinimg.com/originals/7c/cd/74/7ccd74bf7d1c9c61a6e8fe8ac9989f09.gif" alt="">
+                <img src="https://i.pinimg.com/originals/75/b1/75/75b175873a99a668c8fd5b1c2492277e.gif" alt="">
+                <img src="https://i.pinimg.com/originals/fb/16/4c/fb164c25c9c83206fef9028a91ebfeb9.gif" alt="">
+                <img src="https://i.pinimg.com/originals/64/50/ee/6450eee4c0094c6eb84f2ca3a288c7ec.gif" alt="">
+                <img src="https://i.pinimg.com/originals/ee/22/c6/ee22c674c411677b6f314267cac09e32.gif" alt="">
+                <img src="https://i.pinimg.com/originals/7e/f1/0d/7ef10dc555efcbbd2caabe80fb90450d.gif" alt="">
+                <img src="https://i.pinimg.com/originals/5b/ab/00/5bab0090ae505cf7c64a63655cf524cf.gif" alt="">
+                <img src="https://i.pinimg.com/originals/99/23/b9/9923b974c18d4c74f7a149a42547d261.gif" alt="">
+                <img src="https://i.pinimg.com/originals/54/8c/4f/548c4fb2c553cdaeb897b3a3ea7e66e6.gif" alt="">
+                <img src="https://i.pinimg.com/originals/87/f9/8e/87f98e965423bc4fa285fa7706d8ec90.gif" alt="">
+                <img src="https://i.pinimg.com/originals/2c/20/0a/2c200afcf6ffc5e09c71edaec63e8337.gif" alt="">
+                <img src="https://i.pinimg.com/enabled_lo/236x/f6/77/00/f67700f0b4653787428db1551871d17d.jpg" alt="">
+                <img src="https://i.pinimg.com/originals/4c/18/2c/4c182c64e8d4d940622620d248d61f0b.gif" alt="">
+
+                
+                
+
+            </div>  
+        </div>
+    </main>
+
+    <section class="contaner-enviao-msg">
+           <textarea name="txt=msg" id="txt-msg" placeholder="Digite a sua mensagem"></textarea>
+           <div class="div-msg-botoes">
+                 <img src="imagens/icones/attach.svg" alt="">
+                 <img id="btn-emoji" src="imagens/icones/happy.svg" alt="">
+                 <img id="btn_send" src="imagens/icones/send.svg" alt="">
+           </div>
+    </section>
+</body>
+
+</html>

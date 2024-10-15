@@ -1,0 +1,65 @@
+<!-- CARROSSEL TOPO -->
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html{
+       
+    }
+
+    
+    
+    .carrossel{
+        width: 100vw;
+        overflow: hidden;
+    }
+    
+    .contaner{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        transition: 0.7s ease-in-out;
+        transform: translateX(0);
+        
+        
+    }
+    
+    .contaner img {
+        width: 100%;
+        object-fit: cover;
+    }
+    @media screen and (max-width : 480px) {
+     
+       .carrossel{
+            width: 100vw;
+            overflow: hidden;
+        }
+        .contaner {
+            height: 280px;
+           
+
+        }
+
+        .contaner img {
+            max-width: 100%;
+            object-fit: cover;
+          
+        }
+    }
+</style>
+
+<div class="carrossel"></div>
+    <div class="contaner">
+      <img src="imagens/Banner_1.png" alt="">
+      <img src="imagens/Banner_2.png" alt="">
+      <img src="imagens/Banner_3.png" alt="">
+    </div>
+  </div>
+
+
+  <script src="js/carrossel.js"></script>
+
+

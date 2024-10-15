@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do PET</title>
+    <link rel="stylesheet" href="css/meus_pets.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/popup.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="js/meus_pets.js" defer></script>
+    <script src="js/popup.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_upward" />
+
+    
+</head>
+
+<body>
+    <!-- ---- -->
+    <!-- MENU -->
+     <%- include('parters/popup.ejs') %>
+    <header>
+        <img src="" alt="Foto de perfil" class="profile">
+        <div class="menu-icon" id="menu-icon">
+            &#9776; <!-- Ícone de hambúrguer -->
+        </div>
+        <nav class="menu" id="menu">
+            <div class="close-icon" id="close-icon">&times;</div> <!-- Ícone de fechar -->
+            <div class="menu-text">
+                <img src="" alt="Foto de perfil" class="profile-pic">
+                <h2></h2>
+                <p>Online</p>
+            </div>
+            <div class="menu_container">
+                <ul>
+                    <li><a href="#meus_pets"> Meus Pets</a></li>
+                    <!-- <li><a href="#favoritos">Favoritos</a></li> -->
+                    <li><a href="/chat"> Chat</a></li>
+                    <li><a href="/cadpets">Cadastrar Pet</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                    <!-- <li><a href="#adocao">Adoção</a></li> -->
+                </ul>
+            </div>
+            <div class="container_sair">
+                <a href="/" class="menu_sair">
+                    <img src="imagens/icones/Exit to app.png" alt="" class="sair">
+                </a>
+                <a href="/logout">Sair</a>
+            </div>
+        </nav>
+
+    </header>
+    <!-- main Meus_pets -->
+    <main>
+
+        <div class="container_meuspets">
+            <div class="rectangle">
+                <h2>Meus pets</h2>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- container - cards-->
+
+
+    <section class="galeria-adoçao">
+
+    </section>
+
+    <%- include('parters/footer') %>
+
+
+    <!-- ------------- -->
+    <!-- FOOTER PADRÃO -->
+    <!-- <footer>
+
+        <section class="container-footer">
+            <div class="texto-footer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum voluptatem, officiis nulla iure laudantium laborum nemo adipisci!
+                    Beatae, totam, deserunt omnis sed molestias a similique assumenda, neque dolorem deleniti eveniet.
+                </p>
+            </div>
+            <div class="redes-footer">
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </section>
+    </footer> -->
+
+
+    <script src="js/meus_pets.js"></script>
+</body>
+
+</html>

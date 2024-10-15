@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carrossel{
+    width: 100%;
+    overflow: hidden;
+    max-width: 1920px;
+}
+
+.car_contaner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+}
+
+.car_contaner img {
+ width: 100%;
+object-fit: cover;
+}
+
+
+
+@media screen and (max-width : 401px) {
+     
+    .carrossel{
+         width: 100vw;
+         overflow: hidden;
+         min-height: 200px;
+     }
+     .car_contaner {
+         height: 400px;
+    }
+
+    .car_contaner img {
+
+       
+        
+        height: 200px;
+    }
+    
+    }
