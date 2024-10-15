@@ -2,12 +2,12 @@
 const nodemailer = require('nodemailer');
 
 const transporte = nodemailer.createTransport({
-    host: 'h58.servidorhh.com',
+    host: 'Use o seu servidor',
     port: 587,
     secure: false,
     auth: {
-        user: 'suporte@petspotadote.com.br',
-        pass: 'Federal2@@'
+        user: 'Use a seu email',
+        pass: ''
     }
 })
  async function envia_email(email, senha) {
